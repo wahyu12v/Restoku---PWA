@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Poppins:wght@400;600&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* Skip content */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #fff455;
+  color: #007f73;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+.app-bar {
+  background-color: #007F73;
+}
+
+header {
+  background-color: #007F73;
+}
+
+
+.header-menu {
+  background-color: #007F73;
+  color: #fff455;
+  font-size: 32px;
+  display: block;
+  min-width: 44px;
+  min-height: 44px;
+  margin: 10px ;
+  border-style: none;
+  border: none;
+}
+/* End Header*/
+
+
+/* Start navigation */
+.nav {
+  background-color: #007f73;
+  display: grid;
+  height: auto;
+  z-index: 99;
+}
+
+.nav-list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 25%;
+  text-align: center;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.nav a {
+  font-family: 'Noto Sans Mono', monospace;
+  color: yellow;
+  display: inline-block;
+  padding: 20px;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+
+
+
+
+
+/* hero */
+
+.hero-content {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: -25px;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 90vh;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  color: #fff455;
+  font-size: 3.em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero img {
+    min-width: 1000px;
+  }
+  .hero h1 {
+    font-size: 36px;
+  }
+}
+
+/* hero */
+
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+/* Home dan favorit */
+
+.content {
+  padding: 32px;
+}
+
+.content h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #007F73;
+  font-size: 1.8em;
+}
+
+.restaurant {
+  margin: 32px auto auto;
+  text-align: left;
+  display: grid;
+  grid-row-gap: 16px;
+}
+
+
+/* card restoran */
+ .daftar-restaurant {
+  background-color: #DAFFFB;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #007F73;
+  margin-bottom: 20px;
+}
+
+.list-restaurant-image {
+  width: 100%;
+  height: 35vh;
+  display: block;
+}
+
+.list-restaurant-details {
+  padding: 20px;
+}
+
+.list-judul-restaurant {
+  font-weight: bold;
+  color: #007F73;
+  font-size: 1.4em;
+  margin-left: -10px;
+  margin-bottom: 10px;
+}
+
+.list-judul-restaurant a {
+  text-decoration: none;
+  color: #007F73;
+  padding: 10px; 
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.list-judul-restaurant a:hover {
+  color: #EA9215;
+}
+
+
+.list-restaurant-city {
+  font-size: 14px;
+  color: #007F73;
+  margin-bottom: 5px;
+}
+
+.list-restaurant-rating {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #EA9215;
+}
+
+.list-restaurant-rating-teks {
+  margin-right: 5px;
+}
+
+.list-restaurant-description {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; 
+  -webkit-box-orient: vertical;
+}
+
+
+
+
+
+/* Restoran detail */
+.restaurant {
+  margin: 10px auto auto;
+  text-align: left;
+}
+
+.restaurant-menu, .restaurant-review, .restaurant-info  {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.restaurant-item-detail {
+  width: 100%;
+  background-color: #E3FEF7;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #003C43;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.restaurant-item-thumbnail-detail {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.restaurant-item-title-detail {
+  font-weight: bold;
+  margin: 16px;
+  color: #007F73;
+}
+
+.restaurant-item-description-detail {
+  margin: 16px;
+  font-size: 1em;
+  line-height: 1.5em;
+  overflow: hidden;
+}
+
+.judul-detail {
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: #007F73;
+  font-size: 2em;
+  text-align: center;
+}
+
+.restaurant-label {
+  font-weight: bold;
+  margin: 16px;
+  color: #007F73;
+}
+
+.restaurant-label-menu {
+  margin-top: -10px;
+  font-weight: bold;
+  color: #007F73;
+}
+
+.restaurant-label-review {
+  margin-top: -10px;
+  font-weight: bold;
+  color: #007F73;
+}
+
+.restaurant-text {
+  font-weight: lighter;
+  margin: 16px;
+}
+
+.restaurant-info {
+  background-color: #E3FEF7;
+  margin-top: 5px;
+  border: 1px solid #003C43;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.restaurant-menu div > ul {
+padding: 18px;
+border-radius: 10px;
+background-color: #E3FEF7;
+color: #003C43;
+margin-top: 10px;
+margin-right: 10px;
+border: 1px solid #007F73;
+}
+
+.restaurant-menu div > ul > li {
+margin-left: 10px;
+margin-bottom: 15px;
+font-size: 1rem;
+font-weight: 700;
+list-style-type: none;
+}
+
+.restaurant-menu div > ul > ul {
+font-size: 0.9rem;
+columns: 2;
+}
+
+
+.restaurant-menu div > ul > ul > li {
+margin-left: 28px;
+padding: 4px;
+}
+
+.review{
+  display: block;
+  padding: 0 25px;
+  margin: 16px 0 0 0;
+  border-radius: 10px;
+  background-color: #E3FEF7;
+  color: #007F73;
+  border: 1px solid #003C43;
+}
+
+
+
+/* Tombol Like */
+.like svg {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff6347; 
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  padding: 7px;
+  font-size: 18px;
+  color: #ffffff; 
+  cursor: pointer; 
+}
+
+.like.clicked svg {
+  fill: #32cd32; 
+}
+
+
+
+
+/* footer */
+
+.footer {
+  background-color: #007f73;
+  color: #fff455;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.myfooter {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+
+/* Media Query */
+
+
+

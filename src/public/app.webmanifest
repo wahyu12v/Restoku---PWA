@@ -1,0 +1,18 @@
+{
+    "id": "restaurant-catalogue-pwa",
+    "start_url": "/index.html",
+    "name": "Restoku",
+    "short_name": "RST",
+    "description": "Website penyedia list restaurant",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#EA9215",
+    "icons": [
+        {
+            "src": "images/icon/logo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ]
+}
